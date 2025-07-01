@@ -1,6 +1,6 @@
-# 骤雨重山图床
+# Netsky私人图床
 
-English | [简体中文](https://github.com/uxiaohan/ZYCS-IMG/blob/main/README_CN.md)
+English | [简体中文](https://github.com/cnfug/myimg/blob/main/README_CN.md)
 
 > In the modern Internet environment, fast and stable image access is one of the important factors to improve user experience. This article will introduce how to use Cloudflare Pages to deploy a stable unlimited image bed Imgur, realize image upload and access, and further accelerate through WordPress's WP.COM global image cache to improve image loading speed. It can be used for free image hosting solutions, alternatives such as Flickr.
 
@@ -18,7 +18,7 @@ English | [简体中文](https://github.com/uxiaohan/ZYCS-IMG/blob/main/README_C
 
 ![Sudden Rain and Heavy Mountains Image Hosting](https://uxiaohan.github.io/v2/2024/12/1733291366.webp)
 
-[Click to experience Demo](https://wp-cdn.4ce.cn/)
+[Click to experience Demo](https://img.337.plus/)
 
 ## How to deploy
 
@@ -26,11 +26,11 @@ English | [简体中文](https://github.com/uxiaohan/ZYCS-IMG/blob/main/README_C
 
 Vercel Automated Deployment
 
-[![骤雨重山图床](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/uxiaohan/ZYCS-IMG)
+[![Netsky私人图床](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/cnfug/myimg)
 
 Cloudflare Pages automatic deployment
 
-[![骤雨重山图床](https://deploy.workers.cloudflare.com/button)](https://dash.cloudflare.com/?to=/:account/workers-and-pages/create/deploy-to-workers&repository=https://github.com/uxiaohan/ZYCS-IMG)
+[![Netsky私人图床](https://deploy.workers.cloudflare.com/button)](https://dash.cloudflare.com/?to=/:account/workers-and-pages/create/deploy-to-workers&repository=https://github.com/cnfug/myimg)
 
 **Manual Deployment**
 
@@ -56,4 +56,4 @@ Cloudflare Pages automatic deployment
 
 ### Project address
 
-[ZYCS-IMG - Github](https://github.com/uxiaohan/ZYCS-IMG)
+[ZYCS-IMG - Github](https://github.com/cnfug/myimg)
