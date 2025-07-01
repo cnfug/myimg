@@ -1,5 +1,5 @@
 <template>
-  <Header title="Netsky私人图床" desc="稳定高速，多站CDN" />
+  <Header title="私人图床" desc="稳定高速，多站CDN" />
   <main><RouterView /></main>
   <Footer />
   <Toaster />
