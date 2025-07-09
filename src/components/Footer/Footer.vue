@@ -20,12 +20,15 @@
             />
           </a>
         </p>
+ <p id="cf" class="text-xs text-gray-500"></p>
       </section>
     </main>
   </footer>
 </template>
+ 
 <script>
 export default {
+  name: 'Footer',
   mounted() {
     this.updateCloudflareInfo(); 
   },
@@ -43,29 +46,28 @@ export default {
               info[parts[0]] = parts[1];
             }
           });
+          const displayText = [
+            info.loc, 
+            info.ip, 
+            info.colo, 
+            info.http, 
+            info.visit_scheme, 
+            info.tls, 
+            info.kex  
+          ].filter(Boolean).join(" | ");
+          
           const cfElement = document.getElementById("cf"); 
-          const displayText =
-            info.loc  +
-            " " +
-            info.ip  +
-            " | " +
-            info.colo  +
-            " | " +
-            info.http  +
-            " | " +
-            info.visit_scheme  +
-            " | " +
-            info.tls  +
-            " | " +
-            info.kex; 
           if (cfElement) {
             cfElement.textContent  = displayText;
           }
         }
       } catch (error) {
-        console.error(" 获取Cloudflare节点信息失败: ", error);
+        console.error(" 获取Cloudflare节点信息失败:", error);
       }
     }
   }
 };
 </script>
+
+
+     
