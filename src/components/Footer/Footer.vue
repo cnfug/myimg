@@ -1,41 +1,4 @@
 <template>
-                 <script>
-        async function updateCloudflareInfo() {
-          try {
-            const response = await fetch("https://cloudflare.com/cdn-cgi/trace");
-            if (response.ok) {
-              const data = await response.text();
-              const lines = data.split("\n");
-              const info = {};
-              lines.forEach((line) => {
-                const parts = line.split("=");
-                if (parts.length === 2) {
-                  info[parts[0]] = parts[1];
-                }
-              });
-              const cfElement = document.getElementById("cf");
-              const displayText =
-                info.loc +
-                " " +
-                info.ip +
-                " | " +
-                info.colo +
-                " | " +
-                info.http +
-                " | " +
-                info.visit_scheme +
-                " | " +
-                info.tls +
-                " | " +
-                info.kex;
-              cfElement.textContent = displayText;
-            }
-          } catch (error) {
-            console.error("获取Cloudflare节点信息失败: ", error);
-          }
-        }
-        window.addEventListener("load", updateCloudflareInfo);
-      </script>
   <footer class="w-full max-w-[1666px] mt-36 pb-4">
     <main class="m-auto pt-4 flex flex-col-reverse md:flex-row justify-between gap-2 md:gap-16 w-full max-w-[1666px] border-t">
       <section class="[&>p]:text-xs [&>p]:w-full [&>p]:py-[6px] [&>p]:text-center md:[&>p]:text-left [&>p>a]:text-slate-400">
@@ -61,3 +24,48 @@
     </main>
   </footer>
 </template>
+<script>
+export default {
+  mounted() {
+    this.updateCloudflareInfo(); 
+  },
+  methods: {
+    async updateCloudflareInfo() {
+      try {
+        const response = await fetch("https://cloudflare.com/cdn-cgi/trace"); 
+        if (response.ok)  {
+          const data = await response.text(); 
+          const lines = data.split("\n"); 
+          const info = {};
+          lines.forEach((line)  => {
+            const parts = line.split("="); 
+            if (parts.length  === 2) {
+              info[parts[0]] = parts[1];
+            }
+          });
+          const cfElement = document.getElementById("cf"); 
+          const displayText =
+            info.loc  +
+            " " +
+            info.ip  +
+            " | " +
+            info.colo  +
+            " | " +
+            info.http  +
+            " | " +
+            info.visit_scheme  +
+            " | " +
+            info.tls  +
+            " | " +
+            info.kex; 
+          if (cfElement) {
+            cfElement.textContent  = displayText;
+          }
+        }
+      } catch (error) {
+        console.error(" 获取Cloudflare节点信息失败: ", error);
+      }
+    }
+  }
+};
+</script>
