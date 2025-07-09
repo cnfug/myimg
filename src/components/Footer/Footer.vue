@@ -19,6 +19,11 @@
               src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iODMiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iV2ViOiBWdWUiPjx0aXRsZT5XZWI6IFZ1ZTwvdGl0bGU+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iODMiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjcikiPjxyZWN0IHdpZHRoPSI1MiIgaGVpZ2h0PSIyMCIgZmlsbD0iI2ZmZiIvPjxyZWN0IHg9IjUyIiB3aWR0aD0iMzEiIGhlaWdodD0iMjAiIGZpbGw9IiM0ZmMwOGQiLz48cmVjdCB3aWR0aD0iODMiIGhlaWdodD0iMjAiIGZpbGw9InVybCgjcykiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IlZlcmRhbmEsR2VuZXZhLERlamFWdSBTYW5zLHNhbnMtc2VyaWYiIHRleHQtcmVuZGVyaW5nPSJnZW9tZXRyaWNQcmVjaXNpb24iIGZvbnQtc2l6ZT0iMTEwIj48aW1hZ2UgeD0iNSIgeT0iMyIgd2lkdGg9IjE0IiBoZWlnaHQ9IjE0IiB4bGluazpocmVmPSJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITjJaeUJtYVd4c1BTSWpORVpETURoRUlpQnliMnhsUFNKcGJXY2lJSFpwWlhkQ2IzZzlJakFnTUNBeU5DQXlOQ0lnZUcxc2JuTTlJbWgwZEhBNkx5OTNkM2N1ZHpNdWIzSm5Mekl3TURBdmMzWm5JajQ4ZEdsMGJHVStWblZsTG1welBDOTBhWFJzWlQ0OGNHRjBhQ0JrUFNKTk1qUXNNUzQyTVVneE5DNHdOa3d4TWl3MUxqRTJMRGt1T1RRc01TNDJNVWd3VERFeUxESXlMak01V2sweE1pd3hOQzR3T0N3MUxqRTJMREl1TWpOSU9TNDFPVXd4TWl3MkxqUXhiREl1TkRFdE5DNHhPR2cwTGpReldpSXZQand2YzNablBnPT0iLz48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iMzU1IiB5PSIxNTAiIGZpbGw9IiNjY2MiIGZpbGwtb3BhY2l0eT0iLjMiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSIyNTAiPldlYjwvdGV4dD48dGV4dCB4PSIzNTUiIHk9IjE0MCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIGZpbGw9IiMzMzMiIHRleHRMZW5ndGg9IjI1MCI+V2ViPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI2NjUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjIxMCI+VnVlPC90ZXh0Pjx0ZXh0IHg9IjY2NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iMjEwIj5WdWU8L3RleHQ+PC9nPjwvc3ZnPg=="
             />
           </a>
+        </p>
+      </section>
+    </main>
+  </footer>
+</template>
                 <script>
         async function updateCloudflareInfo() {
           try {
@@ -56,8 +61,3 @@
         }
         window.addEventListener("load", updateCloudflareInfo);
       </script>
-        </p>
-      </section>
-    </main>
-  </footer>
-</template>
